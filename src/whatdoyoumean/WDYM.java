@@ -37,8 +37,8 @@ public class WDYM extends javax.swing.JFrame {
     boolean esperandoDD = false;
 
     //declaraciones regex
-    String patronLS = "((l(w|a|d|s|x|z)|(j|m|k|o|l)s))";
-    String patronDD = "((d(e|s|f|r|c|x|d)|(e|s|f|r|c|x|d)d))";
+    String patronLS = "((l(w|a|d|s|x|z)|(j|m|k|o|l)s))"; // combinaciones posibles para el comando LS
+    String patronDD = "((d(e|s|f|r|c|x|d)|(e|s|f|r|c|x|d)d))"; //combinaciones posibles para el comando DD
     String patronVI
             = "("
             + "(v(u|i|o|j|k|l))(\\s)[a-zA-Z0-9\\s]+" //combinaciones posibles con la v buena y el nombre del folder
@@ -52,7 +52,7 @@ public class WDYM extends javax.swing.JFrame {
             + "|"
             + "(v(u|i|o|j|k|l))(\\s)*" //combinaciones posibles con la i buena
             + ")";
-    // End of variables declaration                   
+         
 
     ArrayList<String> comandos = new ArrayList<>();
 
