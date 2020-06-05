@@ -286,7 +286,7 @@ public class WDYM extends javax.swing.JFrame {
                             ImprimirComandoMisc = false;
                         } else {
                             Output.append("\n" + directorio + ">" + value.trim() + "\n");
-                            Output.append("Did you mean 'ls'? [y/n]" + "\n ...");
+                            Output.append("\nQuizo decir 'ls' para listar el directorio? [y/n]" + "\n...");
                             Input.setText("");
                             LSInput = value.trim();
                             esperandoLS = true; //esperando respuesta
@@ -325,7 +325,7 @@ public class WDYM extends javax.swing.JFrame {
                             ImprimirComandoMisc = false;
                         } else {
                             Output.append("\n" + directorio + ">" + value.trim() + "\n");
-                            Output.append("Did you mean 'dd'? [y/n]" + "\n ...");
+                            Output.append("\nQuizo decir  'dd' para limpiar la pantalla? [y/n]" + "\n...");
                             Input.setText("");
                             DDinput = value.trim();
                             esperandoDD = true; //esperando respuesta
@@ -344,7 +344,7 @@ public class WDYM extends javax.swing.JFrame {
             }
 
             if (value.trim().matches(patronViSinPArametro)) { //encontro un vi sin parametro
-                Output.append("\n" + directorio + ">" + "Falta parametro a vi, favor usar VI \"nombre de folder\" ");
+                Output.append("\n" + directorio + ">" + "Falta parametro a vi, favor usar vi \"nombre de folder\" ");
                 Input.setText("");
                 ImprimirComandoMisc = false;
             } else {
@@ -372,7 +372,7 @@ public class WDYM extends javax.swing.JFrame {
                                 Input.setText("");
                             } else {
                                 Output.append("\n" + directorio + ">" + value.trim() + "\n");
-                                Output.append("Did you mean vi \"FolderName\"'? [y/n]" + "\n ...");
+                                Output.append("\nQuizo decir  vi \"FolderName\" para crear el directorio'? [y/n]" + "\n...");
                                 Input.setText("");
                                 VIinput = split[0];
                                 esperandoVI = true; //esperando respuesta
@@ -405,7 +405,7 @@ public class WDYM extends javax.swing.JFrame {
     private void ClearByDD(String value) {
         if (value.trim().equals("clear")) { //solo para limpiar
             Output.setText("");
-            Output.setText(directorio + ">clear");
+            Output.setText(directorio+">");
             Input.setText("");
         }
     }
