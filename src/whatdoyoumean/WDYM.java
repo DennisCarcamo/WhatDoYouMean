@@ -1,4 +1,4 @@
-package wdym;
+package whatdoyoumean;
 
 import java.awt.event.KeyEvent;
 import java.io.File;
